@@ -1,0 +1,368 @@
+*,*:before,*:after{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    width: 100%;
+    background-color: #3B181E;
+    font-family: 'Forum', cursive;
+    font-size: 18px;
+    color: #fff;
+   }
+
+.container {
+    width: 90%;
+    margin:0 auto;
+    position: relative;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    z-index: 5;
+}
+
+.header__body {
+    font-size: 20px;
+    text-transform: uppercase;
+    height: 220px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 140px;
+    height: 50px;
+}
+
+.header__popup {
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    overflow:hidden;
+    background-color:#3B181E;
+    z-index: 5;
+}
+
+.header__popup_content {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.header__popup_content .header__body {
+     justify-content: flex-end;
+}
+
+.header__popup_content .header__logo {
+    position: absolute;
+    left: 790px;
+}
+
+.header__menu {
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+}
+
+.header__list {
+    width: 450px;
+    height: 600px;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+li {
+    padding-top:70px ;
+    list-style:none;
+  }
+
+.header__link {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .5);
+    font-size: 35px;
+    letter-spacing:0.09em;
+    line-height: auto;
+    transition: 0.5s ease;
+}
+
+.header__link:hover {
+    font-size: 45px;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.social-media {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 172px;
+    width: 35px;
+    padding-right: 10px;
+    align-self: center;
+ 
+}
+
+.social-media a:hover *{
+    fill: white;
+    stroke: rgba(0, 0, 0, 0.6);
+}
+
+.social-media a:hover.wsap path{
+    stroke:white;
+}
+
+.header__menu .social-media{
+    position: absolute;
+    bottom:-95px;
+    left: -5px;
+
+}
+
+main {
+    width: 1920px;
+    height: 1080px;
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+}
+
+.slider_for{
+    display: flex;
+    width: 996px;
+    height: 1080px;
+
+}
+
+.slider_for .slick-arrow{
+    display: none;
+}
+
+.preview_border {
+    width: 996px;
+    height: 1020px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    position: absolute;
+    top:30px;
+    left: 30px;
+}
+
+.cat_desc {
+    margin-top: 213px;
+    margin-left: 115px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.cat_desc h1 {
+    width: 430px;
+    font-size: 50px;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    line-height: auto;
+    margin-bottom: 50px;
+}
+
+.cat_desc p {
+    text-align: left;
+    width: 565px;
+    height: 136px;
+    line-height: 150%;
+    margin-bottom: 30px;
+
+}
+
+.button-order {
+    color: #fff;
+    height: 50px;
+    width: 135px;
+    padding: 15px 35px;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    line-height: 20px;
+    border: 1px solid #fff;
+    margin-bottom: 100px;
+}
+
+.button-order:hover {
+    color: black;
+    background-color: #fff;
+}
+
+.sl {
+    width: 552px;
+    height: 123px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-slider {
+    border: 1px solid yellow;
+position: relative;
+left:528px;
+bottom:80px;
+width: 46px;
+height: 46px;
+}
+
+.button-slider .slider2{
+    display: none;
+}
+
+.button-slider:hover .slider1{
+    display: none;
+}
+
+.button-slider:hover .slider2{
+    display: inline-flex;
+}
+
+.more-photo a:hover *{
+    fill: white;
+    stroke: rgba(0, 0, 0, 0.6);
+}
+
+.slider_nav {
+    width: 552px;
+}
+
+.sl__img {
+    width: 123px;
+    height: 120px;
+
+}
+
+.more-photo {
+    position: absolute;
+    right: 100px;
+    bottom: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.more-photo p {
+    width: 250px;
+    height: 30px;
+}
+
+.more-photo a {
+    height: 30px;
+}
+
+.inst_2 {
+    margin-left:30px;
+}
+
+.order_popup {
+    border: 1px solid yellow;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    overflow:hidden;
+    z-index:6;
+}
+
+.order_popup_content {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 716px;
+    height: 444px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    position: absolute;
+    top: 300px;
+    left: 600px;
+}
+
+.order_desc {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 380px;
+    background-color: #3B181E;
+}
+
+.order_desc a {
+    align-self: flex-end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.order_desc p {
+    font-size: 20px;
+    text-align: center;
+    width: 230px;
+    height: 90px;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+}
+
+.order_form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.order_form input:first-child {
+    margin-top: 30px;
+}
+
+.order_form input:nth-child(2) {
+    margin-top: 16px;
+}
+
+.order_form input:nth-child(3) {
+    margin-top: 27px;
+}
+
+input {
+    font-family: 'Forum';
+}
+
+.form_text {
+    font-size: 14px;
+    color: #fff;
+    width: 250px;
+    height: 44px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, .2);
+}
+
+.button_call {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    width: 250px;
+    height: 44px;
+    background-color: #fff;
+    color:black;
+    text-transform: uppercase;
+}
+
+.fotorama {
+    width: 500px;
+}
