@@ -11,8 +11,8 @@ a {
 }
 
 
-
 body {
+    width: 100%;
     background-color: #3B181E;
     font-family: 'Forum', cursive;
     text-transform: uppercase;
@@ -21,26 +21,26 @@ body {
     background-image: url(img/back-flowers.jpg);
     background-repeat: no-repeat;
     background-position: top center;
-    flex: auto;
    }
 
 .container {
+    width: 90%;
     margin:0 auto;
-    padding:0 5%;
+    position: relative;
+}
+
+.header {
+    width: 100%;
 }
 
 .header__body {
-    width: 100%;
     height: 220px;
+    width: 100%;
     position: relative;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-}
-
-.header__body a {
-    display: flex;
 }
 
 .header__logo {
@@ -56,7 +56,7 @@ body {
     position: fixed;
     overflow:hidden;
     background-color:#3B181E;
-    z-index: 50;
+    z-index: 5;
 }
 
 .header__popup_content {
@@ -65,11 +65,13 @@ body {
 }
 
 .header__popup_content .header__body {
-    width: 55%;
-    justify-content: space-between;
-    align-self: flex-end;
+     justify-content: flex-end;
 }
 
+.header__popup_content .header__logo {
+    position: absolute;
+    left: 790px;
+}
 
 .header__menu {
     height: 100%;
@@ -91,7 +93,7 @@ body {
   }
 
   
-.header__list li {
+li {
     padding-top:70px ;
     list-style:none;
   }
@@ -125,11 +127,10 @@ body {
     position: relative;
     flex-direction: column;
     height: 814px;
-    justify-content: center;
 }
 
 .intro p {
-    width: 80%;
+    width: 820px;
     height: 264px;
     margin-top: 100px;
     margin-bottom: 80px;
@@ -146,7 +147,7 @@ body {
     border: 1px solid white;
     font-size: 12px;
     letter-spacing:2px;
-    text-align: center;
+    cursor: pointer;
     
 }
 
@@ -230,10 +231,13 @@ body {
     display: inline-block;
 }
 
+
 .intro-grad {
     position: absolute;
     bottom: 5px;
     height: 75px;
+
+
 }
 .catalog {
     display: flex;
@@ -279,7 +283,6 @@ body {
 
 .cat-menu div {
     position: relative;
-    min-width: 0;
 }
 
 .cat-menu img {
@@ -373,121 +376,15 @@ body {
     bottom: 100px;
 }
 
-.cat-menu.slider_catal {
-    width: 740px;
-    display: none;
-}
-
-
 .action {
     margin: 160px 0;
     height: 410px;
-    width: 80%;
+    width: 1210px;
     position: relative;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-}
-
-.button-order {
-    margin: 15px 0;
-    color: #fff;
-    height: 45px;
-    width: 220px;
-    padding: 15px 35px;
-    font-weight: 100;
-    text-transform: uppercase;
-    font-size: 12px;
-    letter-spacing: 0.08em;
-    line-height: 20px;
-    background-color: #010010;
-    display: none;
-}
-
-.order_popup {
-    border: 1px solid yellow;
-    width: 100%;
-    min-height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top:0;
-    overflow:hidden;
-    z-index:40;
-}
-
-.order_popup_content {
-    display: flex;
-    flex-flow: row nowrap;
-    width: 716px;
-    height: 444px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.8);
-    position: absolute;
-    top: 30%;
-    left: 20%;
-}
-
-.order_desc {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    width: 380px;
-    background-color: #3B181E;
-}
-
-.order_desc a {
-    align-self: flex-end;
-    margin-top: 10px;
-    margin-right: 10px;
-}
-
-.order_desc p {
-    font-size: 20px;
-    text-align: center;
-    width: 230px;
-    height: 90px;
-    text-transform: uppercase;
-    letter-spacing: 0.09em;
-}
-
-.order_form {
-    display: flex;
-    flex-flow: column nowrap;
-}
-
-.order_form input:first-child {
-    margin-top: 30px;
-}
-
-.order_form input:nth-child(2) {
-    margin-top: 16px;
-}
-
-.order_form input:nth-child(3) {
-    margin-top: 27px;
-}
-
-input {
-    font-family: 'Forum';
-}
-
-.form_text {
-    font-size: 14px;
-    color: #fff;
-    width: 250px;
-    height: 44px;
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, .2);
-}
-
-.button_call {
-    font-size: 11px;
-    letter-spacing: 0.15em;
-    width: 250px;
-    height: 44px;
-    background-color: #fff;
-    color:black;
-    text-transform: uppercase;
 }
 
 .action p{
@@ -496,20 +393,7 @@ input {
     width: 350px;
     height: 50px;
     line-height: 170%;
-    text-align: center;
 
-}
-
-.action .action-zagol {
-    margin: 40px 0;
-    width: 380px;
-    line-height: 40px;
-    font-size: 30px;
-    display: none;
-}
-
-.action .action-zagol:after {
-    content: url(img/Vector2.svg);
 }
 
 .action img {
@@ -525,20 +409,18 @@ footer {
     flex-direction: column;
 }
 
+footer::before {
+    content: url(img/footer-gran.svg);
+}
 
 .foot-menu {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     flex-flow:row nowrap;  
-    width: 70%;
+    width: 1000px;
     height: 16px;
 }
-
-.footer-gran {
-    width: 100%;
-}
-
 
 .foot-menu a{
     font-size: 16px;
@@ -546,11 +428,6 @@ footer {
     text-transform: none;
     color: rgba(255, 255, 255, .5);
 }
-
-.foot-menu a:hover{
-    color: rgba(255, 255, 255, 255);
-}
-
 .footer-social.social-media {
     margin: 30px 0;
     display: flex;
@@ -560,156 +437,3 @@ footer {
     height: 25px;
 }
 
-@media (max-width:768px) {
-    body {
-        background-image: url(img/back-flowers-720.jpg);
-    }
-    .container {
-        max-width: 640px;
-    }
-    .intro p {
-        font-size: 70px;
-    }
-
-    .header__burger img{
-        width: 40px;
-        height: 40px;
-    }
-
-    .header__body a p{
-        display: none;
-    }
-    
-    .header__popup {
-        width: 100%;
-    }
-
-    .header__popup_content .header__body {
-        width: 63%;
-    }
-
-    .header__menu .social-media {
-        display: none;
-    }
-
-    .intro p {
-        margin-bottom: 0;
-    }
-
-    .but *{
-        width: 240px;
-    }
-
-    .mouse {
-        display: none;
-    }
-
-    .watch-cat {
-        display: none;
-    }
-
-    .intro-grad {
-        display: none;
-    }
-
-    .intro-nav {
-        margin-top: 120px;
-    }
-
-    .intro-nav .social-media {
-        display: flex;
-        margin: 0 auto;
-        flex-direction: row;
-        height: 55px;
-        width: 460px;
-        padding-right: 10px;
-    }
-
-    .social-media a{
-        width: 55px;
-        background-color: #3B181E;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .catalog {
-        margin-top: 100px;
-        height: 1300px;
-    }
-
-    .cat-backgr {
-        display:none;
-    }
-
-    .cat-menu {
-        display:none;
-    }
-
-    .cat-menu.slider_catal {
-        display: block;
-        margin-top: 30px;
-    }
-
-
-    .button-order {
-        display: block;
-    }
-
-    .action{
-        margin-top: 200px;
-        flex-direction: column-reverse;
-    }
-
-    .action p {
-        width: 453px;
-    }
-
-    .action .action-zagol {
-        display: block;
-    }
-
-    .action img {
-        width: 453px;
-        height: 323px;
-    }
-
-    .footer-gran path{
-        stroke-opacity: 1;
-    }
-
-    .foot-menu {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        height: 240px;
-    }
-
-    .foot-menu a {
-        font-size: 20px;
-    }
-
-    .order_desc {
-        width: 100%;
-    }
-
-    .order_desc p {
-        width: 75%;
-        font-size: 30px;
-        margin: 50px 0;
-    }
-
-    .order_popup_content {
-        width: 464px;
-        height: 640px;
-    }
-
-    .button_call, .form_text {
-        font-size: 20px;
-        width: 373px;
-        height: 65px;
-    }
-
-
-}

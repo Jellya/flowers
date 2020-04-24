@@ -54,7 +54,7 @@ body {
     position: fixed;
     overflow:hidden;
     background-color:#3B181E;
-    z-index: 50;
+    z-index: 5;
 }
 
 .header__popup_content {
@@ -63,11 +63,13 @@ body {
 }
 
 .header__popup_content .header__body {
-    width: 56%;
-    justify-content: space-between;
-    align-self: flex-end;
+     justify-content: flex-end;
 }
 
+.header__popup_content .header__logo {
+    position: absolute;
+    left: 790px;
+}
 
 .header__menu {
     height: 100%;
@@ -89,8 +91,8 @@ body {
   }
 
   
-.header__list li {
-    padding-top:70px;
+li {
+    padding-top:70px ;
     list-style:none;
   }
 
@@ -138,8 +140,8 @@ body {
 }
 
 main {
-    width: 100%;
-    height: 100%;
+    width: 1920px;
+    height: 1080px;
     position: absolute;
     top:0;
     left:0;
@@ -211,6 +213,33 @@ main {
     background-color: #fff;
 }
 
+.sl {
+    width: 552px;
+    height: 123px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-slider {
+    border: 1px solid yellow;
+position: relative;
+left:528px;
+bottom:80px;
+width: 46px;
+height: 46px;
+}
+
+.button-slider .slider2{
+    display: none;
+}
+
+.button-slider:hover .slider1{
+    display: none;
+}
+
+.button-slider:hover .slider2{
+    display: inline-flex;
+}
 
 .more-photo a:hover *{
     fill: white;
@@ -256,9 +285,8 @@ main {
     min-height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
-    top:0;
     overflow:hidden;
-    z-index:40;
+    z-index:6;
 }
 
 .order_popup_content {
@@ -268,8 +296,8 @@ main {
     height: 444px;
     box-shadow: 0 0 10px rgba(0,0,0,0.8);
     position: absolute;
-    top: 30%;
-    left: 20%;
+    top: 300px;
+    left: 600px;
 }
 
 .order_desc {
@@ -335,167 +363,6 @@ input {
     text-transform: uppercase;
 }
 
-footer {
-    position: relative;
-    display: none;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-.foot-menu {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-flow:row nowrap;  
-    width: 70%;
-    height: 16px;
-}
-
-.footer-gran {
-    width: 100%;
-}
-
-.foot-menu a{
-    font-size: 16px;
-    height: 16px;
-    text-transform: none;
-    color: rgba(255, 255, 255, .5);
-}
-
-.foot-menu a:hover{
-    color: rgba(255, 255, 255, 255);
-}
-
-.footer-social.social-media {
-    margin: 30px 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 250px;
-    height: 25px;
-}
-
-@media (max-width:768px) {
-    main {
-      flex-direction: column;
-      position: relative;  
-    }
-    
-    .header__burger img{
-        width: 40px;
-        height: 40px;
-    }
-
-    .header__body a p{
-        display: none;
-    }
-    
-    .header__popup {
-        width: 100%;
-    }
-
-    .header__body {
-        height: 112px;
-    }
-
-    .header__menu .social-media {
-        display: none;
-    }
-
-    .header__popup_content .header__body {
-        width: 60%;
-    }
-
-    .header__menu {
-        margin-top:50px;
-    }
-
-    .header__list li {
-        padding-top:100px;
-    }
-
-    .slider_for {
-        width: 768px;
-        height: 518px;
-    }
-    .slider__item img{
-        width: 100%;
-        height: 518px;
-    }
-    .slider_nav {
-        width: 670px;
-        position: absolute;
-        top:550px;
-    }
-
-    .preview_border {
-        display:none;
-    }
-
-    .more-photo {
-        display: none;
-    }
-
-    .cat_desc {
-        margin-left: 50px;
-        font-size: 20px;
-        width: 668px;
-    }
-
-    .cat_desc p {
-        width: 668px;
-    }
-
-    .button-order {
-        font-size: 15px;
-        width: 170px;
-        height: 60px;
-        padding: 20px 40px ;
-    }
-
-    .order_preview img{
-        display: none;
-    }
-
-    .order_desc {
-        width: 100%;
-    }
-
-    .order_desc p {
-        width: 75%;
-        font-size: 30px;
-        margin: 50px 0;
-    }
-
-    .order_popup_content {
-        width: 464px;
-        height: 640px;
-    }
-
-    .button_call, .form_text {
-        font-size: 20px;
-        width: 373px;
-        height: 65px;
-    }
-
-    footer {
-        display: flex;
-    }
-
-    .footer-gran path{
-        stroke-opacity: 1;
-    }
-
-    .foot-menu {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        height: 240px;
-    }
-
-    .foot-menu a {
-        font-size: 20px;
-    }
+.fotorama {
+    width: 500px;
 }

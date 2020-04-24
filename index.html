@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="slick/slick.css">
-    <link rel="stylesheet" href="slick/slick-theme.css">                                                            
+    <link rel="stylesheet" href="lesson.css">                                                            
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Forum&display=swap&subset=cyrillic" rel="stylesheet">
     <title>Flowers</title>
@@ -17,7 +15,7 @@
                 <div class="header__logo">
                     <img src="img/logo.svg" alt="">
                 </div>
-                <a href="javascript:PopUpShow()" class="header__burger"><img src="img/burger.svg"><p>Меню</p>
+                <a href="javascript:PopUpShow()" class="header__burger"><img src="img/burger.svg"> Меню
                 </a>
             </div>
         </div>
@@ -76,20 +74,6 @@
             </div>
     </header>
     <main>
-        <div class="order_popup" id="popup2">
-            <div class="order_popup_content">
-
-                <div class="order_desc">
-                    <a href="javascript:PopUpHide2()"><img src="img/close.svg"></a>
-                    <p> Оставьте свой номер и мы вам перезвоним!</p>
-                    <form class="order_form ">
-                        <input type="text" name="name" value="Имя" class="form_text">
-                        <input type="text" name="number" value="Телефон" class="form_text">
-                        <input type = "submit" name = "call_submit" value = "Позвоните мне" class="button_call">
-                </form>
-                </div>
-            </div>
-            </div>
         <div class="intro container">
             <p class=>Флористика с душой</p>
             <a href="#catalog" class="but">        
@@ -100,7 +84,7 @@
                     Смотреть
                 </div>
             </a>
-            <nav class="intro-nav">
+            <nav class="intro-nav container">
                     <div class="social-media">
                         <a id="inst" href="https://www.instagram.com/" >
                             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -138,6 +122,7 @@
                 <img src="img/gradient.png">
             </div>
         </div>
+        <div class="catalog container" id="catalog">
             <div class="catalog container" >
             <p class="zagol">Каталог услуг</p>
             <div class="cat-backgr">
@@ -181,56 +166,13 @@
                             <a href="cat-4.html" class="button-watch button-watch-cat">Смотреть работы</a>
                     </div>
             </div>
-            <div class="cat-menu slider_catal">
-                <div class="cat-menu-1">
-                    <img src="img/сat-menu-1.jpg">
-                    <img src="img/cat-hover.png" class="cat-img-hover">
-                    <div class="cat-descr"> 
-                        <p> 01 </p>
-                        <p>Букет невесты и свадебное оформление</p>
-                    </div>
-                        <a href="cat-1.html"  class="button-watch button-watch-cat">Смотреть работы</a>
-                </div>
-                <div class="cat-menu-2">
-                    <img src="img/сat-menu-2.jpg">
-                    <img src="img/cat-hover.png" class="cat-img-hover">
-                    <div class="cat-descr"> 
-                        <p> 02 </p>
-                        <p>Букеты на торжества</p>
-                    </div>
-                        <a href="cat-2.html"  class="button-watch button-watch-cat">Смотреть работы</a>
-                </div>
-                <div class="cat-menu-3">
-                    <img src="img/сat-menu-3.jpg">
-                    <img src="img/cat-hover.png" class="cat-img-hover">
-                    <div class="cat-descr"> 
-                        <p> 03 </p> 
-                        <p>Композиции</p>
-                    </div>
-                        <a href="cat-3.html"  class="button-watch button-watch-cat">Смотреть работы</a>
-                </div>
-                <div class="cat-menu-4">
-                    <img src="img/сat-menu-4.png">
-                    <img src="img/cat-hover.png" class="cat-img-hover">
-                    <div class="cat-descr"> 
-                        <p> 04 </p>
-                        <p>Оформление мероприятий</p>
-                    </div>
-                        <a href="cat-4.html" class="button-watch button-watch-cat">Смотреть работы</a>
-                </div>
-        </div>
             <div class="action">
-                <a href="javascript:PopUpShow2()" class="button-order">Заказать оформление</a>
-                <p>При заказе свадебного оформления предоставляется скидка на букет невесты и бутоньерку в размере 30%</p>
-                <p class="action-zagol">АКЦИОННЫЕ ПРЕДЛОЖЕНИЯ</p>
+                 <p>При заказе свадебного оформления предоставляется скидка на букет невесты и бутоньерку в размере 30%</p>
                 <img src="img/action-img.jpg">
             </div>
         </div>
     </main>
     <footer class="container">
-        <svg class="footer-gran" width="1816" height="2" viewBox="0 0 1816 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 1H1815.5" stroke="white" stroke-opacity="0.2"/>
-            </svg>            
         <div class="foot-menu">
             <a href="cat-1.html">Свадебная флористика</a>
             <a href="cat-2.html">Букеты на любые мероприятия</a>
@@ -266,8 +208,6 @@
             </a>
         </nav>
     </footer>
-    <script src="slick/slick.min.js"></script>
-    <script src="js.js"></script>
     <script src="popup.js"></script>
 </body>
 </html>
