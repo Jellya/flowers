@@ -41,6 +41,10 @@ body {
     align-items: center;
 }
 
+.header__body a {
+    display: flex;
+}
+
 .header__logo {
     width: 140px;
     height: 50px;
@@ -63,7 +67,7 @@ body {
 }
 
 .header__popup_content .header__body {
-    width: 56%;
+    width: 54%;
     justify-content: space-between;
     align-self: flex-end;
 }
@@ -167,6 +171,8 @@ main {
 }
 
 .cat_desc {
+    position: relative;
+    height: 850px;
     margin-top: 213px;
     margin-left: 115px;
     display: flex;
@@ -229,8 +235,8 @@ main {
 
 .more-photo {
     position: absolute;
-    right: 100px;
-    bottom: 0px;
+    width: 100%;
+    bottom: 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
@@ -427,7 +433,7 @@ footer {
     .slider_nav {
         width: 670px;
         position: absolute;
-        top:550px;
+        top:-160px;
     }
 
     .preview_border {
@@ -442,6 +448,12 @@ footer {
         margin-left: 50px;
         font-size: 20px;
         width: 668px;
+        height: 100%;
+    }
+
+    .cat_desc h1 {
+        font-size: 40px;
+        width: 90%;
     }
 
     .cat_desc p {

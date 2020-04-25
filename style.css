@@ -65,7 +65,7 @@ body {
 }
 
 .header__popup_content .header__body {
-    width: 55%;
+    width: 54%;
     justify-content: space-between;
     align-self: flex-end;
 }
