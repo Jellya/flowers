@@ -18,7 +18,7 @@ body {
     text-transform: uppercase;
     font-size: 20px;
     color: #fff;
-    background-image: url(img/back-flowers.jpg);
+    background-image: url(../img/back-flowers.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     flex: auto;
@@ -250,7 +250,7 @@ body {
     font-size: 30px;
 }
 .zagol::after {
-    content: url(img/Vector2.svg);
+    content: url(../img/Vector2.svg);
 }
 
 .cat-backgr {
@@ -310,11 +310,11 @@ body {
     font-size: 20px;
 }
 .cat-menu p:first-child::after {
-    content: url(img/Vector1.svg);
+    content: url(../img/Vector1.svg);
 }
 
 .cat-menu p:first-child::before {
-    content: url(img/Vector1.svg);
+    content: url(../img/Vector1.svg);
     display: none;
 }
 
@@ -509,7 +509,7 @@ input {
 }
 
 .action .action-zagol:after {
-    content: url(img/Vector2.svg);
+    content: url(../img/Vector2.svg);
 }
 
 .action img {
@@ -562,7 +562,7 @@ footer {
 
 @media (max-width:768px) {
     body {
-        background-image: url(img/back-flowers-720.jpg);
+        background-image: url(../img/back-flowers-720.jpg);
     }
     .container {
         max-width: 640px;
@@ -723,7 +723,7 @@ footer {
     }
 
     .background {
-        background:url(img/back-flowers-320.jpg) no-repeat;
+        background:url(../img/back-flowers-320.jpg) no-repeat;
     }
 
     .intro {

@@ -154,7 +154,11 @@ main {
     display: flex;
     width: 996px;
     height: 1080px;
+}
 
+.slider__item img{
+    width: 996px;
+    height: 1080px;
 }
 
 .slider_for .slick-arrow{
