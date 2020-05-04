@@ -1,16 +1,16 @@
-﻿$(document).ready(function(){
+﻿$(document).ready(function () {
     PopUpHide();
-	PopUpHide2();
+    PopUpHide2();
 });
-function PopUpShow(){
+function PopUpShow() {
     $("#popup1").show();
 }
-function PopUpHide(){
+function PopUpHide() {
     $("#popup1").hide();
 }
-function PopUpShow2(){
+function PopUpShow2() {
     $("#popup2").show();
 }
-function PopUpHide2(){
+function PopUpHide2() {
     $("#popup2").hide();
 }
