@@ -478,6 +478,8 @@ input {
     height: 44px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, .2);
+    margin-top: 30px;
+    padding: 10px;
 }
 
 .button_call {
@@ -488,6 +490,8 @@ input {
     background-color: #fff;
     color:black;
     text-transform: uppercase;
+    margin-top: 30px;
+    padding: 10px;
 }
 
 .action p{
